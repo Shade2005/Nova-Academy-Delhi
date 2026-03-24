@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Nova Academy</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#dfe8ff",
+              "on-primary-container": "#708ab5",
+              "tertiary-fixed-dim": "#ffb691",
+              "on-tertiary-fixed-variant": "#6c391d",
+              "on-secondary-fixed-variant": "#4f4629",
+              "inverse-surface": "#143057",
+              "inverse-primary": "#aec7f6",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#221b04",
+              "on-secondary-container": "#6e6444",
+              "tertiary": "#180500",
+              "error-container": "#ffdad6",
+              "secondary-fixed-dim": "#d3c6a0",
+              "secondary-container": "#f0e2ba",
+              "surface-container-highest": "#d6e3ff",
+              "on-primary": "#ffffff",
+              "background": "#f9f9ff",
+              "secondary-fixed": "#f0e2ba",
+              "primary-fixed": "#d6e3ff",
+              "on-primary-fixed": "#001b3d",
+              "on-surface": "#001b3d",
+              "surface-variant": "#d6e3ff",
+              "primary-fixed-dim": "#aec7f6",
+              "on-error": "#ffffff",
+              "surface-dim": "#c8dbff",
+              "error": "#ba1a1a",
+              "on-tertiary-container": "#b97958",
+              "on-background": "#001b3d",
+              "surface-container": "#e7eeff",
+              "outline-variant": "#c4c6cf",
+              "outline": "#74777f",
+              "on-primary-fixed-variant": "#2d476f",
+              "surface-tint": "#465f88",
+              "tertiary-container": "#3d1500",
+              "on-surface-variant": "#44474e",
+              "secondary": "#675e3f",
+              "surface-bright": "#f9f9ff",
+              "on-tertiary-fixed": "#341100",
+              "on-tertiary": "#ffffff",
+              "primary": "#000a1e",
+              "on-secondary": "#ffffff",
+              "surface": "#f9f9ff",
+              "primary-container": "#002147",
+              "surface-container-low": "#f0f3ff",
+              "on-error-container": "#93000a",
+              "inverse-on-surface": "#ecf0ff",
+              "tertiary-fixed": "#ffdbcb"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .editorial-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .glass-morphism {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-[#000a1e]/80 backdrop-blur-xl shadow-[0_32px_64px_-15px_rgba(0,27,61,0.06)]">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-xl font-extrabold tracking-tighter text-[#000a1e] dark:text-white font-headline">
+                Nova Academy
+            </div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] dark:hover:text-white transition-colors font-headline font-bold tracking-tight" href="index.html">Home</a>
+<a class="text-[#002147] dark:text-[#d6e3ff] border-b-2 border-[#002147] dark:border-[#d6e3ff] pb-1 font-headline font-bold tracking-tight" href="about.html">About</a>
+<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] dark:hover:text-white transition-colors font-headline font-bold tracking-tight" href="courses.html">Courses</a>
+<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] dark:hover:text-white transition-colors font-headline font-bold tracking-tight" href="contact.html">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary px-6 py-2.5 rounded-md font-headline font-bold hover:-translate-y-0.5 transition-all scale-95 active:scale-100">
+                Call Now
+            </button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden bg-primary">
+<div class="absolute inset-0 opacity-40">
+<img class="w-full h-full object-cover" data-alt="Modern architectural shot of a minimalist university library with clean lines, large glass windows, and soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjEUNRtZox1VsELw89tMCGxk7-yzBKylbBj8i-NHT7fU_L3Vcegxx78Po9RjVjQGUmwW5B2dC6Bdz5_GJExM3oz6kRdlrH2KITZWjJ_m9e5DNUft6ZIy50r1qN6K-AY5eaVbclxDdSTsEOX5dJhq6GtcsXkfH51UrmazZhVA8sIkkOIzDzifeipQJ1GBMOdOQYfK5_jyH34--8T7rl2aaBZRDUG9rwAlWWbNwN87vtT0s8nGpzYYJ6dAsjthIxk3dl4bY_B1yGdjKS"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary via-primary/80 to-transparent"></div>
+<div class="relative max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container text-[0.75rem] font-bold tracking-[0.1em] mb-6 rounded-sm uppercase">
+                        The Modern Scholastic Ledger
+                    </span>
+<h1 class="text-6xl md:text-7xl font-headline font-extrabold text-white leading-[1.1] tracking-tight mb-8">
+                        About <br/><span class="text-secondary-fixed">Nova Academy</span>
+</h1>
+<p class="text-xl md:text-2xl text-surface-container-high/80 leading-relaxed font-light tracking-wide max-w-2xl">
+                        Tradition in Excellence. We define the future of education through a commitment to architectural focus and academic rigor.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Stats Section (Tonal Layering) -->
+<section class="bg-surface-container-low py-16">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="p-8">
+<div class="text-5xl font-headline font-extrabold text-primary mb-2">1:15</div>
+<div class="text-[0.75rem] font-bold tracking-[0.1em] text-secondary uppercase">Student-Teacher Ratio</div>
+<p class="mt-4 text-on-surface-variant/70 text-sm leading-relaxed">Personalized focus that standard overcrowded centers simply cannot replicate.</p>
+</div>
+<div class="p-8 border-x border-outline-variant/15">
+<div class="text-5xl font-headline font-extrabold text-primary mb-2">10+</div>
+<div class="text-[0.75rem] font-bold tracking-[0.1em] text-secondary uppercase">Years of Excellence</div>
+<p class="mt-4 text-on-surface-variant/70 text-sm leading-relaxed">A decade of refining the ledger of scholastic achievement and discipline.</p>
+</div>
+<div class="p-8">
+<div class="text-5xl font-headline font-extrabold text-primary mb-2">100%</div>
+<div class="text-[0.75rem] font-bold tracking-[0.1em] text-secondary uppercase">Focused Learning</div>
+<p class="mt-4 text-on-surface-variant/70 text-sm leading-relaxed">Zero distractions. Pure academic intent within a premium, curated environment.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Philosophy / Story (Asymmetric Layout) -->
+<section class="py-24 md:py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-20 items-center">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-secondary-container/30 -z-10 rounded-full blur-3xl"></div>
+<img class="w-full aspect-[4/5] object-cover rounded-xl shadow-2xl" data-alt="A focused classroom scene with a small group of students engaged in a deep discussion with a professor in a modern room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1FsCCVu8zG5ExD5YCZCKSRnsnF39HgMP5wG_GleYw8z9DaP882Jr4KSbz6UXWrsiLagpeWDBCI8t8jCww4Fb9aDM-Uqki9CtRg6KkBkv5VmKMlGhWgzz7t3SC-fPbtQirseiHhWNcZFynneT93NMCJdprI5b3GctaL7PXFdjTfiWDFEXTQXMPctCQPeR4vm9XByJKIzHe3_n_vPzD-cNJ4fPFYz9VKR2EzYOiOhVcxrKOur1wgsPsq5dSz1yhEafI9bfxFuP3MeXN"/>
+<div class="absolute -bottom-8 -right-8 bg-primary-container p-8 text-white hidden md:block max-w-[240px]">
+<p class="text-sm italic font-light leading-relaxed">"Education is not the filling of a pail, but the lighting of a fire."</p>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-secondary text-[0.75rem] font-bold tracking-[0.1em] mb-4 block uppercase">Our Philosophy</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-8 leading-tight">Beyond the Tuition Factory</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg font-light">
+<p>
+                                At Nova Academy, we reject the industrialization of learning. While traditional tuition centers prioritize volume, we prioritize <span class="text-primary font-semibold">vision</span>. Our batch sizes are strictly capped at 15 students to ensure that no question goes unanswered and no potential goes untapped.
+                            </p>
+<p>
+                                Our faculty consists of scholars and professionals who bring real-world rigor to the classroom. We believe that a premium environment fosters premium results—discipline is not enforced, but inspired by the high-end ambience of our campus.
+                            </p>
+<p>
+                                We choose quality over quantity, focus over chaos, and individualized mastery over standardized mediocrity.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Infrastructure (Bento Grid) -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="text-secondary text-[0.75rem] font-bold tracking-[0.1em] mb-4 block uppercase">The Campus</span>
+<h2 class="text-4xl font-headline font-bold text-primary">Scholastic Sanctuary</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Interior of a high-end educational lounge with mid-century modern furniture, soft warm lighting, and minimalist wooden shelves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCaQY3vm-0AqSo57ptD89dEtJMKNBA9-7uRwwY8kBG3M4ulLImgDVc2tjzDoznT3FciJzl-I2ibQSp4Sl3AJ7JiQ4SRWEQ7KLYuxocJdtY8L1IaSzm4hWBObPtl3U2GLR0gbsVbZMl1BKS-g9AX81KWb2exHFmVvjKRsKO6gl3cyz0_-_1Xl4WqcgM_EcGngKrY8WDZ2kGIYGf5xSE8NHPCV5cgjzOjS96knyaji6I0lf9JLqYHUJO8xNWX4DD8Yerq48rJXwswQym"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="font-headline font-bold text-xl">The Study Lounge</h3>
+</div>
+</div>
+<div class="md:col-span-2 relative overflow-hidden rounded-xl group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Wide shot of a clean, bright digital collaborative classroom with high-end monitors and ergonomic chairs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc1BbPVPzoB3fOAPARTDXV8hdPqrfssDitPAHbdn1bFwJr0YJNs70FjcvTrNyF6j4orm9aBmdQr5Wv-93Ocv7-l_lXW7lCsdyFbaixiXXqYFPhFhbUFzeXhu1PL8SmWed1ILKfHjn6Hmw-_9wRcU13wiBZLfYAEaIT1egDUCTKP2EBWfzW7Ri1wki49-kRweYgVOMSbgLadvvu2qz0GQUmn4BQpP7rjdtHQExJGafdNWoTeYQTR9MfLsa6gw-gYWO_3rR9JvzvMmET"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="font-headline font-bold text-xl">Interactive Lab</h3>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a leather bound notebook and fountain pen on a clean white desk in a sunlit academic office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbW_K9OILOeqDOW2llsbAEFpIe1lfPwjKnH-os51ZKUmhW5zXSlFgc3GKP9Njb97O2f2fTB7MegC0k9Q8OySoSxZvIJW1wTmaz_krRmJL11iJY9rT3omggWDdYDD7I7pivceSlqLS-Kf4ouZr3UF9k8HIZ9t6aKo9eccfFULssYq7IHbxrP-DXJEYIlGef_WvWsu2vre_C5Yse-fyqnxWyrLKaAThUMjM6o-8oSWSk0bQUbzi6qTILkHEIk8nYAf5HwCKK9_UkzerH"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="font-headline font-bold text-lg">Private Pods</h3>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist architectural courtyard with white walls, stone flooring and a single green tree in the center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkpgOjTTMIETL-FtuEsWkOuRX3EVe_3-1rvyZJI6GfmSbr76sJdH7UH9DjFy1E09asTS_U-5TwO4d3rxZz4LBJtnBjD8XqFFitB-V9cFai8sX3lvGAloJkQl8gFcceOVtkIA4fGcUNJUIHC-LAxn1ssb7G6zaaRo0WZXDKWG_pgdHqyBvoHDZTiS9IcjSt_pdDld9yvbUFbsjc7tGmG4ra5OHx3NsgVFPIL1YqULhgd2yZKiHWRF-G_7OpOGTWWGkE9wGDe51dsNJR"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="font-headline font-bold text-lg">Central Court</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Floating Bar Replacement (Bottom of Page) -->
+<section class="py-24 bg-primary-container relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-secondary/10 skew-x-12 translate-x-20"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="max-w-xl text-center md:text-left">
+<h2 class="text-4xl font-headline font-bold text-white mb-4">Experience the Nova Standard</h2>
+<p class="text-surface-container-high/70 text-lg leading-relaxed">Join us for a demo class and witness how 1:15 ratio transforms learning.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+<button class="bg-surface text-primary px-10 py-4 rounded-md font-headline font-bold text-lg hover:-translate-y-1 transition-all shadow-[0_32px_64px_-15px_rgba(0,0,0,0.3)]">
+                            Book a Demo Class
+                        </button>
+<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-md font-headline font-bold text-lg flex items-center justify-center gap-3 hover:-translate-y-1 transition-all">
+<span class="material-symbols-outlined">forum</span>
+                            Chat on WhatsApp
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#002147] dark:bg-[#000a1e] w-full pt-24 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="col-span-1 md:col-span-1">
+<span class="text-lg font-bold text-white mb-4 block font-headline">Nova Academy</span>
+<p class="text-[#f0e2ba]/70 font-body text-sm leading-relaxed tracking-wide">
+                    Elevating the academic experience through architectural focus and scholarly discipline.
+                </p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-headline uppercase text-xs tracking-widest">Resources</h4>
+<div class="flex flex-col gap-3">
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors hover:underline decoration-[#675e3f] underline-offset-4 text-sm font-body leading-relaxed tracking-wide" href="#">Admissions</a>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors hover:underline decoration-[#675e3f] underline-offset-4 text-sm font-body leading-relaxed tracking-wide" href="#">Faculty</a>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors hover:underline decoration-[#675e3f] underline-offset-4 text-sm font-body leading-relaxed tracking-wide" href="#">Campus Map</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-headline uppercase text-xs tracking-widest">Support</h4>
+<div class="flex flex-col gap-3">
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors hover:underline decoration-[#675e3f] underline-offset-4 text-sm font-body leading-relaxed tracking-wide" href="#">WhatsApp Support</a>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors hover:underline decoration-[#675e3f] underline-offset-4 text-sm font-body leading-relaxed tracking-wide" href="#">Privacy Policy</a>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors hover:underline decoration-[#675e3f] underline-offset-4 text-sm font-body leading-relaxed tracking-wide" href="#">Terms of Service</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-headline uppercase text-xs tracking-widest">Newsletter</h4>
+<div class="relative">
+<input class="w-full bg-white/5 border-b border-white/20 py-3 text-white placeholder-white/30 focus:outline-none focus:border-white transition-colors text-sm" placeholder="Email Address" type="email"/>
+<button class="absolute right-0 top-3 text-white">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<span class="text-[#f0e2ba]/50 font-body text-xs tracking-wide">© 2024 Nova Academy. The Modern Scholastic Ledger.</span>
+<div class="flex gap-6">
+<span class="text-white/30 text-xs uppercase tracking-widest">Instagram</span>
+<span class="text-white/30 text-xs uppercase tracking-widest">LinkedIn</span>
+<span class="text-white/30 text-xs uppercase tracking-widest">YouTube</span>
+</div>
+</div>
+</footer>
+<!-- Mobile High-Conversion Sticky Bar -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 glass-morphism bg-white/80 dark:bg-[#000a1e]/80 p-4 z-50 flex items-center justify-between border-t border-outline-variant/10">
+<div>
+<p class="text-[0.7rem] font-bold text-secondary uppercase tracking-tight">Any questions?</p>
+<p class="text-primary font-headline font-extrabold text-sm">Join a Free Class</p>
+</div>
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded-md font-headline font-bold text-xs scale-95 active:scale-100 transition-all">
+            Call Now
+        </button>
+</div>
+</body></html>

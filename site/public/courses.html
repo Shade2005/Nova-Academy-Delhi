@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Courses | Nova Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#143057",
+              "surface-container-highest": "#d6e3ff",
+              "surface-container": "#e7eeff",
+              "surface-container-high": "#dfe8ff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-container": "#b97958",
+              "on-error": "#ffffff",
+              "surface-bright": "#f9f9ff",
+              "secondary-fixed-dim": "#d3c6a0",
+              "primary-fixed": "#d6e3ff",
+              "on-secondary-fixed-variant": "#4f4629",
+              "secondary-fixed": "#f0e2ba",
+              "surface-variant": "#d6e3ff",
+              "on-tertiary-fixed": "#341100",
+              "tertiary-fixed-dim": "#ffb691",
+              "surface-dim": "#c8dbff",
+              "on-primary-fixed": "#001b3d",
+              "tertiary-fixed": "#ffdbcb",
+              "on-background": "#001b3d",
+              "primary-fixed-dim": "#aec7f6",
+              "on-primary-fixed-variant": "#2d476f",
+              "surface-container-low": "#f0f3ff",
+              "primary": "#000a1e",
+              "on-secondary-container": "#6e6444",
+              "inverse-primary": "#aec7f6",
+              "on-primary-container": "#708ab5",
+              "on-tertiary-fixed-variant": "#6c391d",
+              "on-error-container": "#93000a",
+              "background": "#f9f9ff",
+              "surface": "#f9f9ff",
+              "on-secondary-fixed": "#221b04",
+              "inverse-on-surface": "#ecf0ff",
+              "outline-variant": "#c4c6cf",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#3d1500",
+              "on-surface": "#001b3d",
+              "secondary-container": "#f0e2ba",
+              "secondary": "#675e3f",
+              "outline": "#74777f",
+              "surface-tint": "#465f88",
+              "error": "#ba1a1a",
+              "primary-container": "#002147",
+              "on-secondary": "#ffffff",
+              "tertiary": "#180500",
+              "on-surface-variant": "#44474e"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-nav { background: rgba(249, 249, 255, 0.8); backdrop-filter: blur(12px); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9ff] dark:bg-[#000a1e]">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-extrabold tracking-tighter text-[#000a1e] dark:text-[#f9f9ff]">Nova Academy</div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] transition-colors font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="index.html">Home</a>
+<a class="text-[#002147] dark:text-[#d6e3ff] border-b-2 border-[#002147] pb-1 font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="courses.html">Courses</a>
+<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] transition-colors font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="about.html">About</a>
+<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] transition-colors font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:flex items-center gap-2 bg-secondary-container text-on-secondary-container px-5 py-2 rounded-xl font-bold hover:translate-y-[-2px] transition-transform">
+<span class="material-symbols-outlined text-sm">chat</span>
+                    WhatsApp
+                </button>
+<button class="bg-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold shadow-lg shadow-on-surface/5 hover:translate-y-[-2px] transition-transform">
+                    Call Now
+                </button>
+</div>
+</nav>
+<div class="bg-[#e7eeff] dark:bg-[#002147] h-[1px] w-full"></div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden bg-primary px-8">
+<div class="absolute inset-0 opacity-40">
+<img alt="Modern Classroom" class="w-full h-full object-cover" data-alt="wide shot of a clean modern classroom with light wood desks, minimalist chairs, and large windows with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBhV1AGjxeueuBQFD89C3Sta1wXcPOaPkzmSSJRq735H-jV8SbUNPPa0ZP0aOHrpJGVqd3IliZR9FyZ2I315b0NPAe2GuPlHVgNBBwoxcbo2AzZxTC7MB4MThV7qQtjc-fiKpIYHfsR0v7OeCELjJjmjdWOlqZyzipzSsRDCALTx_zTYD0ZoASTqhm_NogLGXkRS5OMgI2LCv9pyKhUu3bOVmk5bTz8YyOyH0vSgCY7qPH6IAd1g_-HnG6GIPYWK8EVVg_-Bf_8EDi"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+<div class="relative z-10 max-w-7xl mx-auto w-full">
+<div class="max-w-2xl">
+<span class="inline-block text-secondary-fixed font-label text-[0.75rem] tracking-[0.2em] mb-4">OUR ACADEMIC PROGRAMS</span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-on-primary tracking-tight leading-tight mb-6">
+                        The Modern <br/><span class="text-secondary-fixed">Scholastic</span> Ledger
+                    </h1>
+<p class="text-lg text-surface-container-high font-body leading-relaxed mb-10 max-w-lg">
+                        Transforming individual potential into collective excellence through an uncompromising commitment to academic rigor and character development.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-bold hover:translate-y-[-2px] transition-transform flex items-center gap-2" href="#coaching">
+                            Explore Curriculum
+                            <span class="material-symbols-outlined">arrow_downward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- School Coaching Section -->
+<section class="py-24 md:py-32 bg-surface" id="coaching">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-12 items-end mb-20">
+<div class="flex-1">
+<span class="text-secondary font-label text-[0.75rem] tracking-[0.2em] uppercase font-bold">Foundation Excellence</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mt-2">Nursery to Class 10</h2>
+</div>
+<div class="flex-1 text-on-surface-variant font-body text-lg leading-relaxed">
+                        Our school programs are engineered to build intellectual stamina. We blend traditional discipline with progressive STEM mastery to ensure students don't just learn, but thrive.
+                    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Primary -->
+<div class="group bg-surface-container-low p-10 rounded-xl hover:bg-surface-container-high transition-colors">
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl text-primary p-4 bg-surface rounded-full">child_care</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Primary Years</h3>
+<p class="text-on-surface-variant mb-6 font-body">Focusing on sensory discovery, early literacy, and basic mathematical logic through immersive play and structured exploration.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-primary font-medium">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                                Cognitive Development
+                            </li>
+<li class="flex items-center gap-2 text-primary font-medium">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                                Linguistic Foundation
+                            </li>
+</ul>
+</div>
+<!-- Middle -->
+<div class="group bg-surface-container p-10 rounded-xl shadow-2xl shadow-primary/5">
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl text-primary p-4 bg-surface-container-lowest rounded-full" data-weight="fill" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Middle School</h3>
+<p class="text-on-surface-variant mb-6 font-body">Transitioning towards analytical thinking and complex problem solving. Introduction to formal STEM laboratory work.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-primary font-medium">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                                STEM Masterclasses
+                            </li>
+<li class="flex items-center gap-2 text-primary font-medium">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                                Creative Arts &amp; Ethics
+                            </li>
+</ul>
+</div>
+<!-- Secondary -->
+<div class="group bg-primary-container p-10 rounded-xl text-on-primary">
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl text-secondary-fixed p-4 bg-white/10 rounded-full">school</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Secondary Prep</h3>
+<p class="text-on-primary-container mb-6 font-body">Rigorous academic training for board excellence. Emphasis on career orientation and leadership discipline.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-surface-container-lowest font-medium">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">check_circle</span>
+                                Board Exam Strategy
+                            </li>
+<li class="flex items-center gap-2 text-surface-container-lowest font-medium">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">check_circle</span>
+                                Advanced Lab Research
+                            </li>
+</ul>
+</div>
+</div>
+<div class="mt-16 flex justify-center">
+<button class="flex items-center gap-3 bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform">
+                        Book a Demo Class
+                        <span class="material-symbols-outlined">calendar_month</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Professional Upskilling Section -->
+<section class="py-24 md:py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-20 text-center max-w-3xl mx-auto">
+<span class="text-secondary font-label text-[0.75rem] tracking-[0.2em] uppercase font-bold">Future-Ready</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mt-2 mb-6">Professional Upskilling</h2>
+<p class="text-on-surface-variant font-body text-lg leading-relaxed">
+                        Bridging the gap between academic theory and industry reality. Learn from practitioners, build real products, and launch your career.
+                    </p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Digital Marketing -->
+<div class="md:col-span-8 bg-surface-container-lowest p-8 md:p-12 rounded-xl flex flex-col md:flex-row gap-8 items-center border border-primary/5 group">
+<div class="flex-1">
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">Digital Marketing</h3>
+<p class="text-on-surface-variant mb-6 font-body">Master the architecture of modern growth. From algorithmic SEO to high-conversion performance marketing.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary">SEO</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary">AD OPS</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary">ANALYTICS</span>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
+                                GET SYLLABUS <span class="material-symbols-outlined">trending_flat</span>
+</button>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-xl overflow-hidden">
+<img alt="Analytics" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="close up of a laptop screen showing clean minimalist data visualizations and graphs in professional blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATxJMoSEGz981ODp7AUcgg26_AO2eVTxViscoII3cj8dZljFAdTtdN9BOMSuXcwSm-0WTBQczoOk-8jU5eqWKVw1lQ8qlfmddgmTCc3SOCJND28yevOqyt82g5p90XqZjT6nKV75R2C-2WiFFXDcKnG4VI9Jnx1H36_laiT8Ehr6dE8ascX5dasRuHxQ0hICDvEkk9mhGUkXKRTcLcLscmytC5QWOSDuyoS2PU5vzL6Z0XT7sOZ2_dCexdQcXQDfZiSPDvfOKlfseO"/>
+</div>
+</div>
+<!-- Web Design -->
+<div class="md:col-span-4 bg-primary p-8 md:p-12 rounded-xl text-on-primary flex flex-col justify-between group">
+<div>
+<span class="material-symbols-outlined text-secondary-fixed text-4xl mb-6">web</span>
+<h3 class="text-3xl font-headline font-bold mb-4">Web Design</h3>
+<p class="text-on-primary-container font-body">Crafting immersive digital experiences through UI/UX principles and front-end logic.</p>
+</div>
+<div class="mt-8">
+<a class="text-secondary-fixed font-bold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                                VIEW PROJECTS <span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Graphic Design -->
+<div class="md:col-span-4 bg-secondary-container p-8 md:p-12 rounded-xl flex flex-col justify-between group">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">brush</span>
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">Graphic Design</h3>
+<p class="text-on-secondary-container font-body">Visual storytelling, brand identity, and typographic mastery using industry-standard suites.</p>
+</div>
+<div class="mt-8">
+<a class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                                CURRICULUM <span class="material-symbols-outlined">download</span>
+</a>
+</div>
+</div>
+<!-- Career Support -->
+<div class="md:col-span-8 bg-surface-container-highest p-8 md:p-12 rounded-xl border border-primary/5 flex items-center gap-8 relative overflow-hidden">
+<div class="absolute right-0 top-0 w-32 h-32 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10">
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">Placement Ecosystem</h3>
+<p class="text-on-surface-variant font-body mb-8 max-w-lg">Our dedicated career cell works with leading agencies and tech hubs to ensure our graduates transition seamlessly into the professional world.</p>
+<div class="flex items-center gap-6">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container" title="Alumni"></div>
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container" title="Alumni"></div>
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container" title="Alumni"></div>
+</div>
+<span class="text-sm font-bold text-primary">500+ ALUMNI PLACED</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#000a1e] text-[#f0e2ba] py-20 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-2">
+<div class="text-2xl font-black text-[#f9f9ff] mb-4">Nova Academy</div>
+<p class="font-['Plus_Jakarta_Sans'] text-lg leading-relaxed tracking-wide opacity-60 max-w-md">
+                    The Modern Scholastic Ledger. A sanctuary for intellectual rigor and professional evolution. Dedicated to the leaders of tomorrow.
+                </p>
+<div class="mt-8 flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 tracking-wider uppercase text-xs">Institutions</h4>
+<ul class="space-y-4">
+<li><a class="text-[#f0e2ba]/60 hover:text-[#f9f9ff] transition-all hover:translate-x-1 inline-block" href="faq.html">FAQ</a></li>
+<li><a class="text-[#f0e2ba]/60 hover:text-[#f9f9ff] transition-all hover:translate-x-1 inline-block" href="gallery.html">Gallery</a></li>
+<li><a class="text-[#f0e2ba]/60 hover:text-[#f9f9ff] transition-all hover:translate-x-1 inline-block" href="results.html">Results & Testimonials</a></li>
+<li><a class="text-[#f0e2ba]/60 hover:text-[#f9f9ff] transition-all hover:translate-x-1 inline-block" href="blog.html">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 tracking-wider uppercase text-xs">Contact Us</h4>
+<address class="not-italic space-y-4 text-[#f0e2ba]/60">
+<p class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-sm mt-1">location_on</span>
+                        Nova Academy Campus,<br/>Educational District
+                    </p>
+<p class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">call</span>
+                        +91 98765 43210
+                    </p>
+<p class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">mail</span>
+                        hello@novaacademy.edu
+                    </p>
+</address>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs tracking-widest uppercase font-bold opacity-40">
+<div>© 2024 Nova Academy. The Modern Scholastic Ledger.</div>
+<div class="flex gap-8">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 md:hidden bg-[#f9f9ff]/80 dark:bg-[#000a1e]/80 backdrop-blur-xl z-50 border-t border-[#002147]/10 shadow-[0_-8px_30px_rgb(0,27,61,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#675e3f] dark:text-[#f0e2ba] px-4 py-2 hover:bg-[#f0e2ba] dark:hover:bg-[#675e3f]/20 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">import_contacts</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] font-bold">Courses</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#675e3f] dark:text-[#f0e2ba] px-4 py-2 hover:bg-[#f0e2ba] dark:hover:bg-[#675e3f]/20 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">edit_note</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] font-bold">Admissions</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#675e3f] dark:text-[#f0e2ba] px-4 py-2 hover:bg-[#f0e2ba] dark:hover:bg-[#675e3f]/20 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">event_upcoming</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] font-bold">Demo</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#675e3f] dark:text-[#f0e2ba] px-4 py-2 hover:bg-[#f0e2ba] dark:hover:bg-[#675e3f]/20 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">ring_volume</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] font-bold">Contact</span>
+</a>
+</nav>
+</body></html>

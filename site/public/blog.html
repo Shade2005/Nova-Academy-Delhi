@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Ledger | Nova Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-tertiary-fixed-variant": "#6c391d",
+                "surface-variant": "#d6e3ff",
+                "surface-dim": "#c8dbff",
+                "background": "#f9f9ff",
+                "on-primary-container": "#708ab5",
+                "inverse-surface": "#143057",
+                "on-primary-fixed-variant": "#2d476f",
+                "surface-container-low": "#f0f3ff",
+                "error": "#ba1a1a",
+                "outline-variant": "#c4c6cf",
+                "on-error": "#ffffff",
+                "on-surface-variant": "#44474e",
+                "tertiary-container": "#3d1500",
+                "primary-container": "#002147",
+                "on-primary-fixed": "#001b3d",
+                "surface-tint": "#465f88",
+                "surface-container-highest": "#d6e3ff",
+                "error-container": "#ffdad6",
+                "secondary": "#675e3f",
+                "tertiary-fixed-dim": "#ffb691",
+                "tertiary": "#180500",
+                "primary-fixed": "#d6e3ff",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed": "#221b04",
+                "on-secondary": "#ffffff",
+                "on-surface": "#001b3d",
+                "surface-container-high": "#dfe8ff",
+                "outline": "#74777f",
+                "on-tertiary-fixed": "#341100",
+                "tertiary-fixed": "#ffdbcb",
+                "primary": "#000a1e",
+                "secondary-fixed-dim": "#d3c6a0",
+                "inverse-on-surface": "#ecf0ff",
+                "on-tertiary-container": "#b97958",
+                "secondary-container": "#f0e2ba",
+                "on-tertiary": "#ffffff",
+                "inverse-primary": "#aec7f6",
+                "primary-fixed-dim": "#aec7f6",
+                "surface": "#f9f9ff",
+                "on-secondary-container": "#6e6444",
+                "surface-container": "#e7eeff",
+                "secondary-fixed": "#f0e2ba",
+                "on-background": "#001b3d",
+                "on-error-container": "#93000a",
+                "surface-bright": "#f9f9ff",
+                "on-secondary-fixed-variant": "#4f4629",
+                "on-primary": "#ffffff"
+              },
+              fontFamily: {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Inter"],
+                "label": ["Inter"],
+                "serif": ["Playfair Display", "serif"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: rgba(0, 27, 61, 0.06) 0px 16px 32px 0px;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-primary selection:bg-surface-container-highest selection:text-primary">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9ff] dark:bg-[#000a1e]">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+<div class="text-2xl font-extrabold text-[#000a1e] dark:text-[#f9f9ff] tracking-tighter font-headline">
+                Nova Academy
+            </div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-gap-8 gap-x-10">
+<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] dark:hover:text-[#d6e3ff] font-['Plus_Jakarta_Sans'] font-bold tracking-tight hover:-translate-y-0.5 transition-transform duration-200" href="index.html">Home</a>
+<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] dark:hover:text-[#d6e3ff] font-['Plus_Jakarta_Sans'] font-bold tracking-tight hover:-translate-y-0.5 transition-transform duration-200" href="courses.html">Courses</a>
+<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] dark:hover:text-[#d6e3ff] font-['Plus_Jakarta_Sans'] font-bold tracking-tight hover:-translate-y-0.5 transition-transform duration-200" href="about.html">About</a>
+<a class="text-[#002147] dark:text-[#d6e3ff] border-b-2 border-[#002147] dark:border-[#d6e3ff] pb-1 font-['Plus_Jakarta_Sans'] font-bold tracking-tight hover:-translate-y-0.5 transition-transform duration-200" href="blog.html">Blog</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary-container text-on-primary px-6 py-2.5 rounded-lg font-headline font-bold scale-95 active:scale-100 transition-all hover:-translate-y-0.5">
+                    Call Now
+                </button>
+</div>
+</div>
+<div class="bg-[#e7eeff] dark:bg-[#002147] h-[1px] w-full"></div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section: The Ledger -->
+<header class="max-w-7xl mx-auto px-8 mb-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<span class="text-xs font-bold tracking-[0.2em] text-secondary mb-4 block">QUARTERLY INSIGHTS</span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-primary leading-[0.9]">
+                        The Ledger<span class="text-secondary">.</span>
+</h1>
+</div>
+<p class="text-xl text-on-surface-variant max-w-sm leading-relaxed font-light italic">
+                    Curated essays and updates on the future of academic excellence.
+                </p>
+</div>
+</header>
+<!-- Featured Article -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="relative group">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch bg-surface-container rounded-xl overflow-hidden editorial-shadow">
+<div class="lg:col-span-7 aspect-[4/3] lg:aspect-auto overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="Modern minimalist architectural interior of a bright university library with clean lines and soft natural daylighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCea8CVe2wkT291CYGmbKDnYpLGvKsgCqh5MhdnwmQi6lDz39TEOa2twzKWL_E0GdU6E7aWk6liNZ1Mpa4MN1v47I7xG9n-qlhJX1Q758IIhNT_vUOuHFi55Jn_EqFR1HQSKtrbEdQpmRAbSZxjNOjTN2JrMTgGsT2I_LlXpzAsXpdIkr4wfJy85x51xwzcaXboedAKz9ePTLHHpjdI7lDI-17CcJgHA71BQ7r02e36GJGQRGqQYxF7654bN4T5quuLl_O7l9BunKWH"/>
+</div>
+<div class="lg:col-span-5 p-12 lg:p-16 flex flex-col justify-center bg-surface-container-lowest relative">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary-container"></div>
+<span class="text-xs font-bold tracking-[0.15em] text-secondary mb-6 uppercase">Featured Essay</span>
+<h2 class="text-4xl md:text-5xl font-serif text-primary mb-8 leading-tight">
+                            The Architecture of Focus: Why 1:15 Ratios Matter
+                        </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-10 font-body">
+                            Investigating how physical space and student-to-mentor ratios dictate the neuroplasticity of high-performing adolescents in modern pedagogical frameworks.
+                        </p>
+<button class="self-start group/btn flex items-center gap-3 font-headline font-bold text-primary group-hover:gap-5 transition-all">
+<span>Read Essay</span>
+<span class="material-symbols-outlined text-xl">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Articles Grid -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="flex items-center justify-between mb-12">
+<h3 class="text-2xl font-headline font-bold tracking-tight">Recent Dispatches</h3>
+<div class="h-px flex-grow mx-8 bg-outline-variant/30"></div>
+<span class="text-sm font-bold text-secondary cursor-pointer hover:text-primary transition-colors">View All Archive</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Card 1 -->
+<article class="flex flex-col group cursor-pointer">
+<div class="aspect-[3/4] mb-8 overflow-hidden rounded-xl bg-surface-container-high relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80" data-alt="Black and white close up of a fountain pen writing on high quality parchment paper with elegant shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKxjTk-BSvdrEeHAflAAAfm5mu0_MUWkoQlQGl1NDvwz3-s7Prk0rwDuW_SiqPNlVrdVpCyPnOzG0gsxZCupXzw3E54jkO-EXDKzaF_jPgItDtAvZPRdD9izIllca8Nv2LdkD2kywzv61_pipRZA5qgOBp_sA2i0v_fl9a5q8w046TNswT0NSJWd1YOzAONnYltVrrj-p-hqs7DXmvMPkinBpOkJLMs2dSGjab6VDHGS0BebfaWY_FQTTy0zDeqbQinqL4UE83Y3mw"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="text-[10px] font-bold tracking-[0.2em] text-secondary mb-3 uppercase">Pedagogy</span>
+<h4 class="text-2xl font-serif text-primary mb-4 leading-snug group-hover:text-primary-container transition-colors">
+                        Socratic Circles in the Digital Age
+                    </h4>
+<p class="text-on-surface-variant line-clamp-3 leading-relaxed mb-6 font-light">
+                        How Nova Academy preserves the art of classical debate within a technologically pervasive learning environment.
+                    </p>
+<time class="text-xs text-outline font-medium">October 14, 2024</time>
+</article>
+<!-- Card 2 -->
+<article class="flex flex-col group cursor-pointer">
+<div class="aspect-[3/4] mb-8 overflow-hidden rounded-xl bg-surface-container-high relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80" data-alt="Blurred silhouette of students walking through a grand limestone hallway with dramatic afternoon sunbeams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXcJaO2PNhYPiAQlqWnR6FuuPaUNtbvw6J-AaUyVIhgNClndMFkLIlnS21t9LRbFE_aFog70g99eTcMyTzJiQw8ztflhzt964I1uhHG0i4Zvai5W1lB-6QySN7C3LcoaP8snmFBdCzwD7rqLrqUBMzMMnGgX-nTSqv5wn7A_p3oDT1Q5qPEILZo6rOuZMtgIoG1Hgxbn0XGVn3cGU_LzJ7B4eMwMWdOASA5K3urFhHOe1SBfGTdjBy3JlErA6CX0_U-xb7ODxCl8RK"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="text-[10px] font-bold tracking-[0.2em] text-secondary mb-3 uppercase">Alumni News</span>
+<h4 class="text-2xl font-serif text-primary mb-4 leading-snug group-hover:text-primary-container transition-colors">
+                        The Global Network: Beyond the Campus
+                    </h4>
+<p class="text-on-surface-variant line-clamp-3 leading-relaxed mb-6 font-light">
+                        Profiling our 2023 graduates as they navigate top-tier research positions and international policy fellowships.
+                    </p>
+<time class="text-xs text-outline font-medium">October 02, 2024</time>
+</article>
+<!-- Card 3 -->
+<article class="flex flex-col group cursor-pointer">
+<div class="aspect-[3/4] mb-8 overflow-hidden rounded-xl bg-surface-container-high relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80" data-alt="Close up of a chess board with a focused king piece and soft bokeh background of a library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt7YLIcIaaGkY1Fix6CLN60rH2dj9Li91bTnqx4ShXRjrtYAdBUvh-msNnumTmzMo4JVZ5rMGXcDuvpl8oG7ZC2zmYs2EBu6LKcGYap-dbkZlxlwYq5B9lNJ1XuF3Rv9aluiXZdxWfupqs65kwoUGY4xCWpNzU0HMnAqkkbAQjuCXHrOC5fHY93okDg52hGPTFj-eunxx23kusPCO3Xlm1Y3WCBYNPuxEHi-CSUQayac75Bw1xHVFRdiyfFfAM3e_P8VmhbWc4QkX2"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="text-[10px] font-bold tracking-[0.2em] text-secondary mb-3 uppercase">Admissions</span>
+<h4 class="text-2xl font-serif text-primary mb-4 leading-snug group-hover:text-primary-container transition-colors">
+                        The Portfolio Method: Holism vs. Metrics
+                    </h4>
+<p class="text-on-surface-variant line-clamp-3 leading-relaxed mb-6 font-light">
+                        Why our selection process prioritizes intellectual curiosity and character over traditional standardized testing results.
+                    </p>
+<time class="text-xs text-outline font-medium">September 28, 2024</time>
+</article>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="max-w-7xl mx-auto px-8">
+<div class="bg-primary text-secondary-fixed p-12 md:p-24 rounded-xl flex flex-col md:flex-row items-center gap-16 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container rounded-full blur-[120px] -mr-48 -mt-48 opacity-40"></div>
+<div class="flex-1 relative z-10">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tight text-white mb-6">
+                        Join our intellectual community.
+                    </h2>
+<p class="text-[#f0e2ba]/70 text-lg leading-relaxed max-w-md">
+                        Receive monthly essays, curriculum updates, and academy insights straight to your inbox.
+                    </p>
+</div>
+<div class="w-full md:w-auto min-w-[400px] relative z-10">
+<form class="flex flex-col gap-4">
+<div class="relative">
+<input class="w-full bg-white/5 border-b border-white/20 text-white placeholder:text-white/40 py-4 px-2 focus:outline-none focus:border-white transition-colors font-body" placeholder="Institutional Email" type="email"/>
+</div>
+<button class="bg-[#f0e2ba] text-primary font-headline font-bold py-4 px-8 rounded hover:bg-white transition-colors flex items-center justify-center gap-2">
+<span>Subscribe to The Ledger</span>
+<span class="material-symbols-outlined">mark_email_read</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#000a1e] dark:bg-[#00050f] w-full pt-24 pb-12 text-[#f0e2ba] font-['Inter'] text-sm leading-relaxed tracking-wide">
+<div class="flex flex-col md:flex-row justify-between items-start px-12 w-full max-w-7xl mx-auto mb-16 gap-12">
+<div class="max-w-xs">
+<div class="text-xl font-bold text-white mb-6">Nova Academy</div>
+<p class="text-[#f0e2ba]/70">Pioneering a new standard of academic rigor and character development for the next generation of global leaders.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<span class="text-white font-bold uppercase tracking-widest text-[10px]">Academic</span>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors" href="courses.html">Courses</a>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors" href="results.html">Results</a>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors" href="faq.html">FAQ</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-white font-bold uppercase tracking-widest text-[10px]">Company</span>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors" href="about.html">About Us</a>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors" href="gallery.html">Gallery</a>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors" href="contact.html">Contact Us</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-white font-bold uppercase tracking-widest text-[10px]">Connect</span>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors" href="#">LinkedIn</a>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors" href="#">Instagram</a>
+<a class="text-[#f0e2ba]/70 hover:text-white transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center px-12 w-full max-w-7xl mx-auto border-t border-white/10 pt-12">
+<span class="text-[#f0e2ba]/50 mb-4 md:mb-0">© 2024 Nova Academy. All rights reserved.</span>
+<div class="flex gap-8 text-[#f0e2ba]/70">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<!-- Glassmorphism Sticky Mobile CTA -->
+<div class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] bg-surface-container-lowest/80 backdrop-blur-xl editorial-shadow rounded-full px-6 py-4 flex justify-between items-center z-50 border border-white/20">
+<div>
+<p class="text-[10px] font-bold text-secondary uppercase tracking-tighter">Questions?</p>
+<p class="text-sm font-headline font-bold text-primary">Talk to Admissions</p>
+</div>
+<button class="bg-primary-container text-on-primary px-5 py-2 rounded-full text-sm font-bold shadow-lg">
+            Call Now
+        </button>
+</div>
+</body></html>
