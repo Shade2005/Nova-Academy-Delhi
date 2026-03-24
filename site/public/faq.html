@@ -194,7 +194,7 @@
 <img alt="Library" class="w-full h-full object-cover" data-alt="Interior of a ultra-modern minimalist library with high ceilings, warm wood paneling, and soft recessed lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZDwhyeqJJsQAB6FI5_3hrFDD3cGLU3mtMypkts_sN7NEskCqhSmbKOKkAqyiYlOdr2i-7NklyvJ8_3b9xb4xc6LezO9ZKomFBKPRnYQkPSceZZ747UC_4Dw-o1_TbjzJHvHdNiv8oOqA0G2ueJgV7DSO5iCMGdZK5OodTvPoW6gqciMr3C8knpAF8l-_s-89KhV38lNXiBbznxFnIVpQpDPudyoSqQz547RxzIibflTnq3Il7Z2vBjhC7TDBJp4It-xR4ELq0xqBo"/>
 </div>
 <div class="aspect-video rounded-xl overflow-hidden shadow-lg">
-<img alt="Labs" class="w-full h-full object-cover" data-alt="Sleek high-tech science laboratory with clean white surfaces, state-of-the-art equipment, and professional blue ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL6fFy9btXsL4NtMIAt6Vv9lKF_u77gjvk9jaj9bA5kbCj239R6-EEc7hD9kD4rvu--79g-FcrzapKhJAbGKrMkQimWjHuPY6r4iNGNXcmWqTKENOtd-F_jmEcyxNYfa5swpVxzKd-0VpytX9l3xs8qzNMEkjnPniFunYOTBSyMeQklBQIqgcjFPA0vbh4Q1wywg6mxGm3-tMdGT0_H3RPWbLHX5alXD08d5McG-BRuwTk_CigNnJMLubSLajKvIhIU14N51ndDjXa"/>
+<img loading="lazy" alt="Labs" class="w-full h-full object-cover" data-alt="Sleek high-tech science laboratory with clean white surfaces, state-of-the-art equipment, and professional blue ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL6fFy9btXsL4NtMIAt6Vv9lKF_u77gjvk9jaj9bA5kbCj239R6-EEc7hD9kD4rvu--79g-FcrzapKhJAbGKrMkQimWjHuPY6r4iNGNXcmWqTKENOtd-F_jmEcyxNYfa5swpVxzKd-0VpytX9l3xs8qzNMEkjnPniFunYOTBSyMeQklBQIqgcjFPA0vbh4Q1wywg6mxGm3-tMdGT0_H3RPWbLHX5alXD08d5McG-BRuwTk_CigNnJMLubSLajKvIhIU14N51ndDjXa"/>
 </div>
 </div>
 <div class="space-y-4">
@@ -277,4 +277,53 @@
             </button>
 </div>
 </div>
+
+<!-- Mobile Navigation Overlay -->
+<div id="mobile-nav-overlay" class="fixed inset-0 bg-[#000a1e]/98 backdrop-blur-xl z-[100] hidden flex-col justify-center items-center text-center transition-opacity duration-300 opacity-0">
+  <button id="close-mobile-nav" class="absolute top-6 right-6 text-white p-3 min-h-[44px] min-w-[44px] flex items-center justify-center hover:bg-white/10 rounded-full transition-colors" aria-label="Close menu">
+    <span class="material-symbols-outlined text-4xl">close</span>
+  </button>
+  <div class="flex flex-col gap-6 p-4 w-full max-w-sm">
+    <a href="index.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Home</a>
+    <a href="courses.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Courses</a>
+    <a href="about.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">About</a>
+    <a href="results.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Results</a>
+    <a href="gallery.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Gallery</a>
+    <a href="blog.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Blog</a>
+    <a href="faq.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">FAQ</a>
+    <a href="contact.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Contact</a>
+    <div class="w-full h-px bg-white/20 my-4"></div>
+    <button class="bg-[#f0e2ba] text-[#002147] px-8 py-4 rounded-xl font-bold w-full active:scale-95 transition-transform min-h-[44px]">Call Now</button>
+  </div>
+</div>
+
+<!-- Mobile Hamburger Button -->
+<button id="open-mobile-nav" class="md:hidden fixed top-4 right-6 z-[60] bg-[#000a1e]/80 backdrop-blur-md text-white p-2 rounded-lg shadow-lg border border-white/10 min-h-[44px] min-w-[44px] flex items-center justify-center hover:bg-[#000a1e] transition-colors">
+  <span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+
+<script>
+  document.getElementById('open-mobile-nav')?.addEventListener('click', () => {
+    const overlay = document.getElementById('mobile-nav-overlay');
+    if(overlay) {
+      overlay.classList.remove('hidden');
+      overlay.classList.add('flex');
+      // small delay to allow display:flex to apply before opacity transition
+      setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+      document.body.style.overflow = 'hidden'; // prevent background scrolling
+    }
+  });
+  document.getElementById('close-mobile-nav')?.addEventListener('click', () => {
+    const overlay = document.getElementById('mobile-nav-overlay');
+    if(overlay) {
+      overlay.classList.add('opacity-0');
+      setTimeout(() => {
+        overlay.classList.add('hidden');
+        overlay.classList.remove('flex');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+  });
+</script>
+
 </body></html>

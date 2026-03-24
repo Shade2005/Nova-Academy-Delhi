@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<html class="scroll-smooth light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>The Ledger | Nova Academy</title>
@@ -169,7 +169,7 @@
 <!-- Card 2 -->
 <article class="flex flex-col group cursor-pointer">
 <div class="aspect-[3/4] mb-8 overflow-hidden rounded-xl bg-surface-container-high relative">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80" data-alt="Blurred silhouette of students walking through a grand limestone hallway with dramatic afternoon sunbeams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXcJaO2PNhYPiAQlqWnR6FuuPaUNtbvw6J-AaUyVIhgNClndMFkLIlnS21t9LRbFE_aFog70g99eTcMyTzJiQw8ztflhzt964I1uhHG0i4Zvai5W1lB-6QySN7C3LcoaP8snmFBdCzwD7rqLrqUBMzMMnGgX-nTSqv5wn7A_p3oDT1Q5qPEILZo6rOuZMtgIoG1Hgxbn0XGVn3cGU_LzJ7B4eMwMWdOASA5K3urFhHOe1SBfGTdjBy3JlErA6CX0_U-xb7ODxCl8RK"/>
+<img loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80" data-alt="Blurred silhouette of students walking through a grand limestone hallway with dramatic afternoon sunbeams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXcJaO2PNhYPiAQlqWnR6FuuPaUNtbvw6J-AaUyVIhgNClndMFkLIlnS21t9LRbFE_aFog70g99eTcMyTzJiQw8ztflhzt964I1uhHG0i4Zvai5W1lB-6QySN7C3LcoaP8snmFBdCzwD7rqLrqUBMzMMnGgX-nTSqv5wn7A_p3oDT1Q5qPEILZo6rOuZMtgIoG1Hgxbn0XGVn3cGU_LzJ7B4eMwMWdOASA5K3urFhHOe1SBfGTdjBy3JlErA6CX0_U-xb7ODxCl8RK"/>
 <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
 </div>
 <span class="text-[10px] font-bold tracking-[0.2em] text-secondary mb-3 uppercase">Alumni News</span>
@@ -184,7 +184,7 @@
 <!-- Card 3 -->
 <article class="flex flex-col group cursor-pointer">
 <div class="aspect-[3/4] mb-8 overflow-hidden rounded-xl bg-surface-container-high relative">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80" data-alt="Close up of a chess board with a focused king piece and soft bokeh background of a library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt7YLIcIaaGkY1Fix6CLN60rH2dj9Li91bTnqx4ShXRjrtYAdBUvh-msNnumTmzMo4JVZ5rMGXcDuvpl8oG7ZC2zmYs2EBu6LKcGYap-dbkZlxlwYq5B9lNJ1XuF3Rv9aluiXZdxWfupqs65kwoUGY4xCWpNzU0HMnAqkkbAQjuCXHrOC5fHY93okDg52hGPTFj-eunxx23kusPCO3Xlm1Y3WCBYNPuxEHi-CSUQayac75Bw1xHVFRdiyfFfAM3e_P8VmhbWc4QkX2"/>
+<img loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80" data-alt="Close up of a chess board with a focused king piece and soft bokeh background of a library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt7YLIcIaaGkY1Fix6CLN60rH2dj9Li91bTnqx4ShXRjrtYAdBUvh-msNnumTmzMo4JVZ5rMGXcDuvpl8oG7ZC2zmYs2EBu6LKcGYap-dbkZlxlwYq5B9lNJ1XuF3Rv9aluiXZdxWfupqs65kwoUGY4xCWpNzU0HMnAqkkbAQjuCXHrOC5fHY93okDg52hGPTFj-eunxx23kusPCO3Xlm1Y3WCBYNPuxEHi-CSUQayac75Bw1xHVFRdiyfFfAM3e_P8VmhbWc4QkX2"/>
 <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
 </div>
 <span class="text-[10px] font-bold tracking-[0.2em] text-secondary mb-3 uppercase">Admissions</span>
@@ -270,4 +270,53 @@
             Call Now
         </button>
 </div>
+
+<!-- Mobile Navigation Overlay -->
+<div id="mobile-nav-overlay" class="fixed inset-0 bg-[#000a1e]/98 backdrop-blur-xl z-[100] hidden flex-col justify-center items-center text-center transition-opacity duration-300 opacity-0">
+  <button id="close-mobile-nav" class="absolute top-6 right-6 text-white p-3 min-h-[44px] min-w-[44px] flex items-center justify-center hover:bg-white/10 rounded-full transition-colors" aria-label="Close menu">
+    <span class="material-symbols-outlined text-4xl">close</span>
+  </button>
+  <div class="flex flex-col gap-6 p-4 w-full max-w-sm">
+    <a href="index.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Home</a>
+    <a href="courses.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Courses</a>
+    <a href="about.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">About</a>
+    <a href="results.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Results</a>
+    <a href="gallery.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Gallery</a>
+    <a href="blog.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Blog</a>
+    <a href="faq.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">FAQ</a>
+    <a href="contact.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Contact</a>
+    <div class="w-full h-px bg-white/20 my-4"></div>
+    <button class="bg-[#f0e2ba] text-[#002147] px-8 py-4 rounded-xl font-bold w-full active:scale-95 transition-transform min-h-[44px]">Call Now</button>
+  </div>
+</div>
+
+<!-- Mobile Hamburger Button -->
+<button id="open-mobile-nav" class="md:hidden fixed top-4 right-6 z-[60] bg-[#000a1e]/80 backdrop-blur-md text-white p-2 rounded-lg shadow-lg border border-white/10 min-h-[44px] min-w-[44px] flex items-center justify-center hover:bg-[#000a1e] transition-colors">
+  <span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+
+<script>
+  document.getElementById('open-mobile-nav')?.addEventListener('click', () => {
+    const overlay = document.getElementById('mobile-nav-overlay');
+    if(overlay) {
+      overlay.classList.remove('hidden');
+      overlay.classList.add('flex');
+      // small delay to allow display:flex to apply before opacity transition
+      setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+      document.body.style.overflow = 'hidden'; // prevent background scrolling
+    }
+  });
+  document.getElementById('close-mobile-nav')?.addEventListener('click', () => {
+    const overlay = document.getElementById('mobile-nav-overlay');
+    if(overlay) {
+      overlay.classList.add('opacity-0');
+      setTimeout(() => {
+        overlay.classList.add('hidden');
+        overlay.classList.remove('flex');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+  });
+</script>
+
 </body></html>

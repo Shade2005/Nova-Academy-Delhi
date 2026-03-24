@@ -196,7 +196,7 @@
 <!-- Map Section -->
 <section class="w-full h-[500px] relative" id="map">
 <div class="absolute inset-0 bg-surface-container-high">
-<img alt="Campus Map Location" class="w-full h-full object-cover grayscale opacity-50 contrast-125" data-alt="Clean architectural map or stylized satellite view of a premium school district with clear road markers and green spaces" data-location="New Delhi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB40h341-Pp2PMm57umYCmSiEzPVgMkWPywi_x-YWndiRID7z5pzBkXLN6F4m7UsVjxH1ssvHN1d-LPJW6xUr8w8DE5ltTtTnzH5cIzzkC_QUOVCdhNi-pl81Teb77spoVY-vPl3Q3czY-LEgDZ5KjWcA56Ir7u1LMGIMZcNDggX1-5lnk7fe4kzHN_Xs18BBHHxMIhq6NWt29oB8LZBKjf0dmlXE593NkM1xJIihneKmmqd-sPuG5P65pX85zVcc6lXAMVYdP6iZ8D"/>
+<img loading="lazy" alt="Campus Map Location" class="w-full h-full object-cover grayscale opacity-50 contrast-125" data-alt="Clean architectural map or stylized satellite view of a premium school district with clear road markers and green spaces" data-location="New Delhi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB40h341-Pp2PMm57umYCmSiEzPVgMkWPywi_x-YWndiRID7z5pzBkXLN6F4m7UsVjxH1ssvHN1d-LPJW6xUr8w8DE5ltTtTnzH5cIzzkC_QUOVCdhNi-pl81Teb77spoVY-vPl3Q3czY-LEgDZ5KjWcA56Ir7u1LMGIMZcNDggX1-5lnk7fe4kzHN_Xs18BBHHxMIhq6NWt29oB8LZBKjf0dmlXE593NkM1xJIihneKmmqd-sPuG5P65pX85zVcc6lXAMVYdP6iZ8D"/>
 <div class="absolute inset-0 flex items-center justify-center">
 <div class="relative">
 <div class="absolute -inset-4 bg-primary/20 rounded-full animate-ping"></div>
@@ -261,4 +261,53 @@
 <span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-[0.1em] mt-1">Location</span>
 </div>
 </nav>
+
+<!-- Mobile Navigation Overlay -->
+<div id="mobile-nav-overlay" class="fixed inset-0 bg-[#000a1e]/98 backdrop-blur-xl z-[100] hidden flex-col justify-center items-center text-center transition-opacity duration-300 opacity-0">
+  <button id="close-mobile-nav" class="absolute top-6 right-6 text-white p-3 min-h-[44px] min-w-[44px] flex items-center justify-center hover:bg-white/10 rounded-full transition-colors" aria-label="Close menu">
+    <span class="material-symbols-outlined text-4xl">close</span>
+  </button>
+  <div class="flex flex-col gap-6 p-4 w-full max-w-sm">
+    <a href="index.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Home</a>
+    <a href="courses.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Courses</a>
+    <a href="about.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">About</a>
+    <a href="results.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Results</a>
+    <a href="gallery.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Gallery</a>
+    <a href="blog.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Blog</a>
+    <a href="faq.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">FAQ</a>
+    <a href="contact.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Contact</a>
+    <div class="w-full h-px bg-white/20 my-4"></div>
+    <button class="bg-[#f0e2ba] text-[#002147] px-8 py-4 rounded-xl font-bold w-full active:scale-95 transition-transform min-h-[44px]">Call Now</button>
+  </div>
+</div>
+
+<!-- Mobile Hamburger Button -->
+<button id="open-mobile-nav" class="md:hidden fixed top-4 right-6 z-[60] bg-[#000a1e]/80 backdrop-blur-md text-white p-2 rounded-lg shadow-lg border border-white/10 min-h-[44px] min-w-[44px] flex items-center justify-center hover:bg-[#000a1e] transition-colors">
+  <span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+
+<script>
+  document.getElementById('open-mobile-nav')?.addEventListener('click', () => {
+    const overlay = document.getElementById('mobile-nav-overlay');
+    if(overlay) {
+      overlay.classList.remove('hidden');
+      overlay.classList.add('flex');
+      // small delay to allow display:flex to apply before opacity transition
+      setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+      document.body.style.overflow = 'hidden'; // prevent background scrolling
+    }
+  });
+  document.getElementById('close-mobile-nav')?.addEventListener('click', () => {
+    const overlay = document.getElementById('mobile-nav-overlay');
+    if(overlay) {
+      overlay.classList.add('opacity-0');
+      setTimeout(() => {
+        overlay.classList.add('hidden');
+        overlay.classList.remove('flex');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+  });
+</script>
+
 </body></html>
