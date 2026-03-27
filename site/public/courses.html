@@ -80,30 +80,28 @@
     </style>
 </head>
 <body class="bg-surface text-on-surface">
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-[#f9f9ff] dark:bg-[#000a1e]">
-<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="text-xl font-extrabold tracking-tighter text-[#000a1e] dark:text-[#f9f9ff]">Nova Academy</div>
-<!-- Desktop Navigation -->
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] transition-colors font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="index.html">Home</a>
-<a class="text-[#002147] dark:text-[#d6e3ff] border-b-2 border-[#002147] pb-1 font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="courses.html">Courses</a>
-<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] transition-colors font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="about.html">About</a>
-<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] transition-colors font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="contact.html">Contact</a>
-</div>
-<div class="flex items-center gap-4">
-<button class="hidden lg:flex items-center gap-2 bg-secondary-container text-on-secondary-container px-5 py-2 rounded-xl font-bold hover:translate-y-[-2px] transition-transform">
-<span class="material-symbols-outlined text-sm">chat</span>
-                    WhatsApp
-                </button>
-<button class="bg-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold shadow-lg shadow-on-surface/5 hover:translate-y-[-2px] transition-transform">
-                    Call Now
-                </button>
-</div>
-</nav>
-<div class="bg-[#e7eeff] dark:bg-[#002147] h-[1px] w-full"></div>
-</header>
-<main class="pt-20">
+<!-- Top Navigation Bar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <div class="flex justify-between items-center px-6 md:px-8 py-4 max-w-7xl mx-auto">
+      <div class="text-xl font-extrabold tracking-tighter text-[#000a1e] font-headline">
+        Nova Academy
+      </div>
+      <div class="hidden lg:flex gap-6 items-center">
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="index.html">Home</a>
+        <a class="text-[#002147] border-b-2 border-[#002147] pb-1 font-headline font-bold tracking-tight" href="courses.html">Courses</a>
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="about.html">About</a>
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="results.html">Results</a>
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="gallery.html">Gallery</a>
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="blog.html">Blog</a>
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="faq.html">FAQ</a>
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="contact.html">Contact</a>
+      </div>
+      <button class="bg-[#002147] text-white px-6 py-2.5 rounded-lg font-bold hover:-translate-y-0.5 transition-transform duration-200 active:opacity-80 active:scale-[0.98]" onclick="window.location.href='tel:+918929243913'; return false;">
+        Call Now
+      </button>
+    </div>
+  </nav>
+  <main class="pt-20">
 <!-- Hero Section -->
 <section class="relative min-h-[716px] flex items-center overflow-hidden bg-primary px-8">
 <div class="absolute inset-0 opacity-40">
@@ -197,7 +195,7 @@
 </div>
 </div>
 <div class="mt-16 flex justify-center">
-<button class="flex items-center gap-3 bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform">
+<button class="flex items-center gap-3 bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform" onclick="window.open('https://wa.me/918929243913/?text=Hi%2C%20I%E2%80%99d%20like%20to%20enroll%20my%20child%20in%20your%20academy.%20Please%20share%20details%20about%20batches%2C%20fees%2C%20and%20admission%20process', '_blank'); return false;">
                         Book a Demo Class
                         <span class="material-symbols-outlined">calendar_month</span>
 </button>
@@ -367,7 +365,7 @@
     <a href="faq.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">FAQ</a>
     <a href="contact.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Contact</a>
     <div class="w-full h-px bg-white/20 my-4"></div>
-    <button class="bg-[#f0e2ba] text-[#002147] px-8 py-4 rounded-xl font-bold w-full active:scale-95 transition-transform min-h-[44px]">Call Now</button>
+    <button class="bg-[#f0e2ba] text-[#002147] px-8 py-4 rounded-xl font-bold w-full active:scale-95 transition-transform min-h-[44px]" onclick="window.location.href='tel:+918929243913'; return false;">Call Now</button>
   </div>
 </div>
 

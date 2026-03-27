@@ -84,29 +84,28 @@
     </style>
 </head>
 <body class="bg-background text-on-background font-body">
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-[#f9f9ff] dark:bg-[#000a1e]">
-<nav class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
-<div class="text-xl font-extrabold tracking-tighter text-[#000a1e] dark:text-[#f9f9ff] font-headline uppercase">
-                Nova Academy
-            </div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] dark:hover:text-[#d6e3ff] transition-colors font-headline font-bold tracking-tight text-sm" href="index.html">Home</a>
-<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] dark:hover:text-[#d6e3ff] transition-colors font-headline font-bold tracking-tight text-sm" href="courses.html">Courses</a>
-<a class="text-[#675e3f] dark:text-[#f0e2ba] hover:text-[#002147] dark:hover:text-[#d6e3ff] transition-colors font-headline font-bold tracking-tight text-sm" href="about.html">About</a>
-<a class="text-[#002147] dark:text-[#d6e3ff] border-b-2 border-[#002147] dark:border-[#d6e3ff] pb-1 font-headline font-bold tracking-tight text-sm" href="results.html">Results & Testimonials</a>
-</div>
-<div class="flex items-center gap-4">
-<button class="hidden md:block px-5 py-2.5 bg-secondary-container text-on-secondary-container font-headline font-bold text-sm rounded-md hover:translate-y-[-2px] transition-transform duration-200">
-                    WhatsApp
-                </button>
-<button class="px-5 py-2.5 bg-primary-container text-on-primary font-headline font-bold text-sm rounded-md hover:translate-y-[-2px] transition-transform duration-200">
-                    Call Now
-                </button>
-</div>
-</nav>
-</header>
-<main class="pt-20">
+<!-- Top Navigation Bar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <div class="flex justify-between items-center px-6 md:px-8 py-4 max-w-7xl mx-auto">
+      <div class="text-xl font-extrabold tracking-tighter text-[#000a1e] font-headline">
+        Nova Academy
+      </div>
+      <div class="hidden lg:flex gap-6 items-center">
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="index.html">Home</a>
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="courses.html">Courses</a>
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="about.html">About</a>
+        <a class="text-[#002147] border-b-2 border-[#002147] pb-1 font-headline font-bold tracking-tight" href="results.html">Results</a>
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="gallery.html">Gallery</a>
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="blog.html">Blog</a>
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="faq.html">FAQ</a>
+        <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="contact.html">Contact</a>
+      </div>
+      <button class="bg-[#002147] text-white px-6 py-2.5 rounded-lg font-bold hover:-translate-y-0.5 transition-transform duration-200 active:opacity-80 active:scale-[0.98]" onclick="window.location.href='tel:+918929243913'; return false;">
+        Call Now
+      </button>
+    </div>
+  </nav>
+  <main class="pt-20">
 <!-- Hero Section -->
 <section class="relative h-[716px] flex items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
@@ -259,10 +258,10 @@
 <h2 class="text-on-primary font-headline font-extrabold text-4xl md:text-5xl tracking-tighter mb-8">Experience the Nova Standard</h2>
 <p class="text-on-primary-container text-lg mb-10">Step inside our ecosystem of focus and discover how we can elevate your academic trajectory.</p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<button class="w-full sm:w-auto px-8 py-4 bg-secondary-container text-on-secondary-container font-headline font-bold rounded-md hover:translate-y-[-2px] transition-all">
+<button class="w-full sm:w-auto px-8 py-4 bg-secondary-container text-on-secondary-container font-headline font-bold rounded-md hover:translate-y-[-2px] transition-all" onclick="window.open('https://wa.me/918929243913/?text=Hi%2C%20I%E2%80%99d%20like%20to%20enroll%20my%20child%20in%20your%20academy.%20Please%20share%20details%20about%20batches%2C%20fees%2C%20and%20admission%20process', '_blank'); return false;">
                             Book a Demo Class
                         </button>
-<button class="w-full sm:w-auto px-8 py-4 bg-transparent border border-on-primary/30 text-on-primary font-headline font-bold rounded-md hover:bg-on-primary/10 transition-all flex items-center justify-center gap-2">
+<button class="w-full sm:w-auto px-8 py-4 bg-transparent border border-on-primary/30 text-on-primary font-headline font-bold rounded-md hover:bg-on-primary/10 transition-all flex items-center justify-center gap-2" onclick="window.open('https://wa.me/918929243913/?text=Hi%2C%20I%E2%80%99d%20like%20to%20enroll%20my%20child%20in%20your%20academy.%20Please%20share%20details%20about%20batches%2C%20fees%2C%20and%20admission%20process', '_blank'); return false;">
 <span class="material-symbols-outlined text-sm">chat_bubble</span>
                             Chat on WhatsApp
                         </button>
@@ -339,7 +338,7 @@
     <a href="faq.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">FAQ</a>
     <a href="contact.html" class="text-2xl font-headline font-bold text-white hover:text-[#f0e2ba] py-2">Contact</a>
     <div class="w-full h-px bg-white/20 my-4"></div>
-    <button class="bg-[#f0e2ba] text-[#002147] px-8 py-4 rounded-xl font-bold w-full active:scale-95 transition-transform min-h-[44px]">Call Now</button>
+    <button class="bg-[#f0e2ba] text-[#002147] px-8 py-4 rounded-xl font-bold w-full active:scale-95 transition-transform min-h-[44px]" onclick="window.location.href='tel:+918929243913'; return false;">Call Now</button>
   </div>
 </div>
 

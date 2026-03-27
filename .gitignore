@@ -2,3 +2,5 @@ queue/
 next-prompt.md
 .agents/
 stitch.json
+
+.vercel
