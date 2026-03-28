@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nova-academy.vercel.app/sitemap.xml
