@@ -146,6 +146,7 @@
       text-wrap: balance;
     }
   </style>
+  <link rel="stylesheet" href="assets/premium.css">
 </head>
 
 <body class="bg-background text-on-background font-body">
@@ -174,9 +175,10 @@
   </nav>
   <main>
     <!-- Hero Section -->
-    <section class="pt-32 pb-24 px-8 overflow-hidden">
+    <section class="pt-32 pb-24 px-8 overflow-hidden relative">
+      <div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"></div>
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
-        <div class="lg:col-span-7">
+        <div class="lg:col-span-7 reveal">
           <span
             class="inline-block text-secondary font-headline font-bold tracking-[0.2em] text-[0.75rem] mb-6 uppercase">Est.
             2024 • Academic Excellence</span>
@@ -188,21 +190,21 @@
             Experience a new standard of personalized education designed for excellence and future outcomes. We blend
             discipline with digital-first pedagogy.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4">
+          <div class="flex flex-col sm:flex-row gap-4 reveal" style="transition-delay: 0.2s;">
             <button
-              class="bg-primary-container text-white px-8 py-4 rounded-lg font-bold text-lg hover:translate-y-[-2px] transition-transform shadow-lg shadow-[#001b3d]/10"
+              class="bg-primary-container text-white px-8 py-4 rounded-lg font-bold text-lg hover:translate-y-[-2px] transition-transform shadow-lg shadow-[#001b3d]/10 magnetic"
               onclick="window.open('https://wa.me/918929243913/?text=Hi%2C%20I%E2%80%99d%20like%20to%20enroll%20my%20child%20in%20your%20academy.%20Please%20share%20details%20about%20batches%2C%20fees%2C%20and%20admission%20process', '_blank'); return false;">
               Book a Demo Class
             </button>
             <button
-              class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold text-lg hover:translate-y-[-2px] transition-transform flex items-center justify-center gap-2"
+              class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold text-lg hover:translate-y-[-2px] transition-transform flex items-center justify-center gap-2 magnetic"
               onclick="window.open('https://wa.me/918929243913/?text=Hi%2C%20I%E2%80%99d%20like%20to%20enroll%20my%20child%20in%20your%20academy.%20Please%20share%20details%20about%20batches%2C%20fees%2C%20and%20admission%20process', '_blank'); return false;">
               <span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
               Chat on WhatsApp
             </button>
           </div>
         </div>
-        <div class="lg:col-span-5 relative">
+        <div class="lg:col-span-5 relative reveal-right">
           <div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary-container/30 rounded-full blur-3xl -z-10"></div>
           <div
             class="relative z-10 h-full rounded-xl overflow-hidden shadow-2xl transform lg:rotate-3 hover:rotate-0 transition-transform duration-500">
@@ -218,16 +220,16 @@
     <section class="py-24 bg-surface-container-low">
       <div class="max-w-7xl mx-auto px-8">
         <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-          <div class="max-w-2xl">
+          <div class="max-w-2xl reveal">
             <h2 class="text-[1.75rem] font-headline font-extrabold text-primary mb-4">The Academy Difference</h2>
             <p class="text-slate-600">Our pedagogical approach is rooted in the "Scholastic Ledger" philosophy—balancing
               rigorous tracking with creative exploration.</p>
           </div>
           <div class="h-[2px] bg-secondary-container flex-grow mx-8 hidden lg:block"></div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-group">
           <!-- Feature 1 -->
-          <div class="p-10 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+          <div class="p-10 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow group hover-lift">
             <div
               class="w-14 h-14 bg-secondary-container flex items-center justify-center rounded-xl mb-8 group-hover:scale-110 transition-transform">
               <span class="material-symbols-outlined text-primary text-3xl"
@@ -238,7 +240,7 @@
               distraction and foster deep cognitive focus.</p>
           </div>
           <!-- Feature 2 -->
-          <div class="p-10 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+          <div class="p-10 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow group hover-lift">
             <div
               class="w-14 h-14 bg-secondary-container flex items-center justify-center rounded-xl mb-8 group-hover:scale-110 transition-transform">
               <span class="material-symbols-outlined text-primary text-3xl" data-icon="groups">groups</span>
@@ -248,7 +250,7 @@
               ratio to ensure no question goes unanswered.</p>
           </div>
           <!-- Feature 3 -->
-          <div class="p-10 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+          <div class="p-10 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow group hover-lift">
             <div
               class="w-14 h-14 bg-secondary-container flex items-center justify-center rounded-xl mb-8 group-hover:scale-110 transition-transform">
               <span class="material-symbols-outlined text-primary text-3xl"
@@ -266,7 +268,7 @@
       <div class="max-w-7xl mx-auto px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <!-- Segment A: School Coaching -->
-          <div class="relative group rounded-xl overflow-hidden bg-primary-container p-1 text-white shadow-2xl">
+          <div class="relative group rounded-xl overflow-hidden bg-primary-container p-1 text-white shadow-2xl reveal-left">
             <div class="absolute inset-0 opacity-20 pointer-events-none">
               <img alt="Academic Focus" class="w-full h-full object-cover grayscale"
                 data-alt="vintage leather bound books stacked neatly on a dark wooden desk with a soft quill pen in background"
@@ -297,7 +299,7 @@
             </div>
           </div>
           <!-- Segment B: Upskilling Courses -->
-          <div class="relative group rounded-xl overflow-hidden bg-secondary-container p-1 shadow-2xl">
+          <div class="relative group rounded-xl overflow-hidden bg-secondary-container p-1 shadow-2xl reveal-right">
             <div class="absolute inset-0 opacity-10 pointer-events-none">
               <img loading="lazy" alt="Modern Tech" class="w-full h-full object-cover"
                 data-alt="abstract digital mesh representing connectivity and high technology in soft beige and navy blue gradients"
@@ -335,10 +337,10 @@
     <section class="py-24 bg-primary overflow-hidden">
       <div class="max-w-7xl mx-auto px-8 relative">
         <div class="text-center mb-16">
-          <h2 class="text-3xl font-headline font-bold text-white mb-4">The Ledger of Success</h2>
-          <p class="text-blue-200/60 max-w-lg mx-auto">Real outcomes from our community of parents and pupils.</p>
+          <h2 class="text-3xl font-headline font-bold text-white mb-4 reveal">The Ledger of Success</h2>
+          <p class="text-blue-200/60 max-w-lg mx-auto reveal" style="transition-delay: 0.1s;">Real outcomes from our community of parents and pupils.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal-group">
           <!-- Testimonial 1 -->
           <div class="bg-white/5 p-8 rounded-xl border border-white/10 backdrop-blur-sm">
             <div class="flex gap-1 text-secondary mb-6">
@@ -512,6 +514,7 @@
     <span class="material-symbols-outlined text-2xl">menu</span>
   </button>
 
+  <script src="assets/premium.js"></script>
   <script>
     document.getElementById('open-mobile-nav')?.addEventListener('click', () => {
       const overlay = document.getElementById('mobile-nav-overlay');

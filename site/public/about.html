@@ -100,6 +100,7 @@
         -webkit-backdrop-filter: blur(12px);
       }
     </style>
+    <link rel="stylesheet" href="assets/premium.css">
 </head>
 <body class="bg-surface font-body text-on-surface antialiased">
   <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
@@ -125,7 +126,7 @@
 <img class="w-full h-full object-cover" data-alt="Modern architectural shot of a minimalist university library with clean lines, large glass windows, and soft morning light" src="./assets/campus_hero.png"/>
 </div>
 <div class="absolute inset-0 bg-gradient-to-tr from-primary via-primary/80 to-transparent"></div>
-<div class="relative max-w-7xl mx-auto px-8 w-full">
+<div class="relative max-w-7xl mx-auto px-8 w-full reveal">
 <div class="max-w-3xl">
 <span class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container text-[0.75rem] font-bold tracking-[0.1em] mb-6 rounded-sm uppercase">
                         The Modern Scholastic Ledger
@@ -142,7 +143,7 @@
 <!-- Stats Section (Tonal Layering) -->
 <section class="bg-surface-container-low py-16">
 <div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center reveal-group">
 <div class="p-8">
 <div class="text-5xl font-headline font-extrabold text-primary mb-2">1:15</div>
 <div class="text-[0.75rem] font-bold tracking-[0.1em] text-secondary uppercase">Student-Teacher Ratio</div>
@@ -165,14 +166,14 @@
 <section class="py-24 md:py-32 overflow-hidden">
 <div class="max-w-7xl mx-auto px-8">
 <div class="flex flex-col md:flex-row gap-20 items-center">
-<div class="w-full md:w-1/2 relative">
+<div class="w-full md:w-1/2 relative reveal-left">
 <div class="absolute -top-10 -left-10 w-64 h-64 bg-secondary-container/30 -z-10 rounded-full blur-3xl"></div>
 <img class="w-full aspect-[4/5] object-cover rounded-xl shadow-2xl" data-alt="A focused classroom scene with a small group of students engaged in a deep discussion with a professor in a modern room" src="./assets/classroom_action.png"/>
 <div class="absolute -bottom-8 -right-8 bg-primary-container p-8 text-white hidden md:block max-w-[240px]">
 <p class="text-sm italic font-light leading-relaxed">"Education is not the filling of a pail, but the lighting of a fire."</p>
 </div>
 </div>
-<div class="w-full md:w-1/2">
+<div class="w-full md:w-1/2 reveal-right">
 <span class="text-secondary text-[0.75rem] font-bold tracking-[0.1em] mb-4 block uppercase">Our Philosophy</span>
 <h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-8 leading-tight">Beyond the Tuition Factory</h2>
 <div class="space-y-6 text-on-surface-variant leading-relaxed text-lg font-light">
@@ -286,6 +287,7 @@
   <span class="material-symbols-outlined text-2xl">menu</span>
 </button>
 
+<script src="assets/premium.js"></script>
 <script>
   document.getElementById('open-mobile-nav')?.addEventListener('click', () => {
     const overlay = document.getElementById('mobile-nav-overlay');

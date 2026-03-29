@@ -96,6 +96,7 @@
         backdrop-filter: blur(12px);
       }
     </style>
+    <link rel="stylesheet" href="assets/premium.css">
 </head>
 <body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
   <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
@@ -120,7 +121,7 @@
 <div class="absolute inset-0 opacity-40 mix-blend-overlay">
 <img alt="Campus Architecture" class="w-full h-full object-cover" data-alt="wide architectural shot of a modern minimalist university building with large glass windows and clean concrete lines at twilight" src="./assets/campus_hero.png"/>
 </div>
-<div class="relative z-10 max-w-4xl">
+<div class="relative z-10 max-w-4xl reveal">
 <span class="inline-block px-3 py-1 mb-6 text-[0.75rem] font-bold tracking-[0.2em] uppercase bg-secondary-container text-on-secondary-container rounded-sm">The Environment</span>
 <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-white tracking-tight leading-tight mb-8">
                     The Campus
@@ -156,7 +157,7 @@
 <!-- Photo Grid (Bento/Architectural Layout) -->
 <section class="pb-24 bg-surface">
 <div class="max-w-7xl mx-auto px-6">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 reveal-group">
 <!-- Feature Image -->
 <div class="md:col-span-8 group relative overflow-hidden rounded-xl aspect-[16/10] md:aspect-auto md:h-[600px] bg-surface-container">
 <img alt="Collaborative Lounge" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="modern glass-walled meeting room with sleek minimalist furniture and soft natural lighting in an academic setting" src="./assets/study_lounge.png"/>
@@ -192,7 +193,7 @@
 <!-- Campus Tour CTA -->
 <section class="py-24 bg-surface-container-low overflow-hidden relative">
 <div class="absolute top-0 right-0 w-1/3 h-full bg-secondary-container/10 -skew-x-12 translate-x-20"></div>
-<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16 relative z-10">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16 relative z-10 reveal">
 <div class="md:w-1/2">
 <h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-6 leading-tight">
                         Seeing is Believing
@@ -292,6 +293,7 @@
   <span class="material-symbols-outlined text-2xl">menu</span>
 </button>
 
+<script src="assets/premium.js"></script>
 <script>
   document.getElementById('open-mobile-nav')?.addEventListener('click', () => {
     const overlay = document.getElementById('mobile-nav-overlay');

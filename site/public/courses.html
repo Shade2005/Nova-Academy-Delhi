@@ -83,12 +83,13 @@
         },
       }
     </script>
-<style>
+    <style>
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
         .glass-nav { background: rgba(249, 249, 255, 0.8); backdrop-filter: blur(12px); }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
     </style>
+    <link rel="stylesheet" href="assets/premium.css">
 </head>
 <body class="bg-surface text-on-surface">
   <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
@@ -114,7 +115,7 @@
 <img alt="Modern Classroom" class="w-full h-full object-cover" data-alt="wide shot of a clean modern classroom with light wood desks, minimalist chairs, and large windows with soft natural light" src="./assets/classroom_action.png"/>
 </div>
 <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
-<div class="relative z-10 max-w-7xl mx-auto w-full">
+<div class="relative z-10 max-w-7xl mx-auto w-full reveal">
 <div class="max-w-2xl">
 <span class="inline-block text-secondary-fixed font-label text-[0.75rem] tracking-[0.2em] mb-4">OUR ACADEMIC PROGRAMS</span>
 <h1 class="text-5xl md:text-7xl font-headline font-bold text-on-primary tracking-tight leading-tight mb-6">
@@ -136,7 +137,7 @@
 <section class="py-24 md:py-32 bg-surface" id="coaching">
 <div class="max-w-7xl mx-auto px-8">
 <div class="flex flex-col md:flex-row gap-12 items-end mb-20">
-<div class="flex-1">
+<div class="flex-1 reveal-left">
 <span class="text-secondary font-label text-[0.75rem] tracking-[0.2em] uppercase font-bold">Foundation Excellence</span>
 <h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mt-2">Nursery to Class 10</h2>
 </div>
@@ -144,9 +145,9 @@
                         Our school programs are engineered to build intellectual stamina. We blend traditional discipline with progressive STEM mastery to ensure students don't just learn, but thrive.
                     </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-group">
 <!-- Primary -->
-<div class="group bg-surface-container-low p-10 rounded-xl hover:bg-surface-container-high transition-colors">
+<div class="group bg-surface-container-low p-10 rounded-xl hover:bg-surface-container-high transition-colors hover-lift">
 <div class="mb-8">
 <span class="material-symbols-outlined text-4xl text-primary p-4 bg-surface rounded-full">child_care</span>
 </div>
@@ -164,7 +165,7 @@
 </ul>
 </div>
 <!-- Middle -->
-<div class="group bg-surface-container p-10 rounded-xl shadow-2xl shadow-primary/5">
+<div class="group bg-surface-container p-10 rounded-xl shadow-2xl shadow-primary/5 hover-lift">
 <div class="mb-8">
 <span class="material-symbols-outlined text-4xl text-primary p-4 bg-surface-container-lowest rounded-full" data-weight="fill" style="font-variation-settings: 'FILL' 1;">menu_book</span>
 </div>
@@ -182,7 +183,7 @@
 </ul>
 </div>
 <!-- Secondary -->
-<div class="group bg-primary-container p-10 rounded-xl text-on-primary">
+<div class="group bg-primary-container p-10 rounded-xl text-on-primary hover-lift">
 <div class="mb-8">
 <span class="material-symbols-outlined text-4xl text-secondary-fixed p-4 bg-white/10 rounded-full">school</span>
 </div>
@@ -200,8 +201,8 @@
 </ul>
 </div>
 </div>
-<div class="mt-16 flex justify-center">
-<button class="flex items-center gap-3 bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform" onclick="window.open('https://wa.me/918929243913/?text=Hi%2C%20I%E2%80%99d%20like%20to%20enroll%20my%20child%20in%20your%20academy.%20Please%20share%20details%20about%20batches%2C%20fees%2C%20and%20admission%20process', '_blank'); return false;">
+<div class="mt-16 flex justify-center reveal">
+<button class="flex items-center gap-3 bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform magnetic" onclick="window.open('https://wa.me/918929243913/?text=Hi%2C%20I%E2%80%99d%20like%20to%20enroll%20my%20child%20in%20your%20academy.%20Please%20share%20details%20about%20batches%2C%20fees%2C%20and%20admission%20process', '_blank'); return false;">
                         Book a Demo Class
                         <span class="material-symbols-outlined">calendar_month</span>
 </button>
@@ -219,9 +220,9 @@
                     </p>
 </div>
 <!-- Bento Grid Layout -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 reveal-group">
 <!-- Digital Marketing -->
-<div class="md:col-span-8 bg-surface-container-lowest p-8 md:p-12 rounded-xl flex flex-col md:flex-row gap-8 items-center border border-primary/5 group">
+<div class="md:col-span-8 bg-surface-container-lowest p-8 md:p-12 rounded-xl flex flex-col md:flex-row gap-8 items-center border border-primary/5 group hover-lift">
 <div class="flex-1">
 <h3 class="text-3xl font-headline font-bold text-primary mb-4">Digital Marketing</h3>
 <p class="text-on-surface-variant mb-6 font-body">Master the architecture of modern growth. From algorithmic SEO to high-conversion performance marketing.</p>
@@ -239,7 +240,7 @@
 </div>
 </div>
 <!-- Web Design -->
-<div class="md:col-span-4 bg-primary p-8 md:p-12 rounded-xl text-on-primary flex flex-col justify-between group">
+<div class="md:col-span-4 bg-primary p-8 md:p-12 rounded-xl text-on-primary flex flex-col justify-between group hover-lift">
 <div>
 <span class="material-symbols-outlined text-secondary-fixed text-4xl mb-6">web</span>
 <h3 class="text-3xl font-headline font-bold mb-4">Web Design</h3>
@@ -252,7 +253,7 @@
 </div>
 </div>
 <!-- Graphic Design -->
-<div class="md:col-span-4 bg-secondary-container p-8 md:p-12 rounded-xl flex flex-col justify-between group">
+<div class="md:col-span-4 bg-secondary-container p-8 md:p-12 rounded-xl flex flex-col justify-between group hover-lift">
 <div>
 <span class="material-symbols-outlined text-primary text-4xl mb-6">brush</span>
 <h3 class="text-3xl font-headline font-bold text-primary mb-4">Graphic Design</h3>
@@ -357,6 +358,7 @@
   <span class="material-symbols-outlined text-2xl">menu</span>
 </button>
 
+<script src="assets/premium.js"></script>
 <script>
   document.getElementById('open-mobile-nav')?.addEventListener('click', () => {
     const overlay = document.getElementById('mobile-nav-overlay');
