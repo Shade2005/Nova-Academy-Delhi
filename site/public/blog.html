@@ -6,7 +6,8 @@
 <title>Academic Insights & Leadership Journals | Nova Academy</title>
 <meta name="description" content="Stay updated with the latest in pedagogy, student leadership, and academic wisdom from Nova Academy. Intersection of tradition and modern education.">
 <link rel="canonical" href="https://nova-academy.vercel.app/blog.html">
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/premium.css">
 <!-- Social Meta Tags -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nova-academy.vercel.app/blog.html">
@@ -96,8 +97,9 @@
 <body class="bg-surface font-body text-primary selection:bg-surface-container-highest selection:text-primary">
   <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
     <div class="flex justify-between items-center px-6 md:px-8 py-4 max-w-7xl mx-auto">
-      <a href="index.html" class="text-xl font-extrabold tracking-tighter text-[#000a1e] font-headline">
-        Nova Academy
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="Nova Academy Logo" class="h-8 md:h-10 w-auto">
+        <span class="text-xl font-extrabold tracking-tighter text-[#000a1e] font-headline hidden sm:inline-block">Nova Academy</span>
       </a>
       <div class="hidden lg:flex gap-6 items-center">
         <a class="text-slate-600 hover:text-[#002147] transition-colors font-headline font-bold tracking-tight" href="index.html">Home</a>
@@ -304,6 +306,7 @@
   <span class="material-symbols-outlined text-2xl">menu</span>
 </button>
 
+<script src="assets/premium.js"></script>
 <script>
   document.getElementById('newsletter-form')?.addEventListener('submit', function(e) {
     e.preventDefault();
