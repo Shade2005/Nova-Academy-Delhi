@@ -47,6 +47,22 @@ Apply this to prominent call-to-action buttons. When the user moves their mouse 
 </button>
 ```
 
+## 5. FAQ Dropdown Animations (Details/Summary)
+Any standard HTML `<details>` and `<summary>` elements will now **automatically** animate when clicked! You do not need to add any special Javascript or tailwind classes for the content to slide down and fade in gracefully. This is handled globally by `premium.css`.
+
+**Just structure it like this:**
+```html
+<details class="group bg-surface-container-lowest p-6 rounded-xl shadow-sm transition-all duration-300 open:shadow-md">
+  <summary class="flex justify-between items-center cursor-pointer list-none">
+    <span class="font-bold">What is the batch size?</span>
+    <span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+  </summary>
+  <div class="mt-4 text-on-surface-variant leading-relaxed">
+    Our batch size is strictly capped at 15 students. <!-- This inner div automatically fades and slides down! -->
+  </div>
+</details>
+```
+
 ---
 
 ### Implementation Checklist for Blogs:
